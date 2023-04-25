@@ -1,21 +1,18 @@
 #include <iostream>
 using namespace std;
+#define PI 3.1415926
 
-int main()
-{
-    int *myp;
-    try
-    {
-        myp = new int[10000];
-        cout << "Memory space allocation\n";
-    }
-    catch (...)
-    {
-        cout << "failed in allocating memory\n"
-             << endl;
-    }
+enum MsOffice: uint8_t {
+   BOLD,
+   ITALICS,
+   UNDERLINE,
+   CROSSSED = 5
+};
 
-    delete[] myp;
+int main(){
 
+    int myAttributes = BOLD;
+
+    cout << CROSSSED << endl;
     return 0;
 }
