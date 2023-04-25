@@ -13,6 +13,6 @@ int main(){
 
     int myAttributes = BOLD;
 
-    cout << CROSSSED << endl;
+    cout << myAttributes << endl;
     return 0;
 }
